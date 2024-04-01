@@ -100,8 +100,8 @@ Item {
 
     Text {
         id: text1
-        x: 147
-        y: 29
+        x: 180
+        y: 33
         text: qsTr("WELCOME!")
         font.pixelSize: 280
         font.family: "Courier"

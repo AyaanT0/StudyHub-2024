@@ -1,0 +1,9 @@
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/StudyHub.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/StudyHub_autogen_timestamp_deps.dir
+C:/Users/ayaan/Desktop/School/Gr.12/SEMESTER 2/PERIOD 2 - Comp Sci/summative app/app/build-StudyHub-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/StudyHub_autogen.dir
