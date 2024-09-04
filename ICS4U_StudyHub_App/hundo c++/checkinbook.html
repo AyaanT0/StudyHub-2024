@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <!--favicon-->
+    <title>Recent Activity</title>
+    <!--tab title-->
+    <link rel="stylesheet" href="css/checkin.css" />
+    <!--this links the css stylesheet for this page, located in the css folder-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--this initializes jQuery, the JS library used for scripting and firebase api calls -->
+    <script src="js/removebook.js" defer></script>
+    <!--this links the js script for this page, located in the js folder-->
+    <style>
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+          /* Styles for iframe */
+    #jsrobot-iframe {
+      position: absolute;
+      top: 23vh;
+      left: 45.5vw;
+      width: 50vw;
+      height: 70vh;
+      z-index: 72; /* Adjust z-index */
+    }
+    </style>
+  </head>
+
+  <body>
+    <iframe id="jsrobot-iframe" src="https://box.code.game" frameborder="0"></iframe>
+    <div align="center" class="removebookpage" id="removebookpage">
+      <!--main content div-->
+      <h1 class="welcome">Recent Activity</h1>
+      <!--title top h1-->
+      <h2 class="logotext">StudyHub</h2>
+      <!--north park library title h2-->
+      <rect class="rectangle0000"></rect
+      ><!--top bar rectangle logo-->
+      <rect class="rectangle0"></rect
+      ><!--top bar rectangle title-->
+      <rect class="rectangle1bigtportal"></rect
+      ><!--main content rectangle-->
+      <rect class="rectangle1bigtremove"></rect>
+      <rect class="rectanglejoinedone"></rect>
+      <rect class="rectanglejoinedtitleone"></rect>
+      <a href="homepage.html"><img src="img/studylogoclr.png" class="logo" /></a
+      ><!--top bar logo-->
+      <span class="joinedtextone">Joined Groups</span>
+
+      <button
+        onclick="location.href = 'portal.html';"
+        type="button"
+        class="logout logout:hover"
+      >
+        Back</button
+      ><!--back button to technician portal-->
+
+      
+      <h1>Joined Groups</h1>
+      <table id="joined-groups" class="joined-groups-table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Location</th>
+            <th>Subject</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="joined-groups-body">
+          <!-- Joined groups will be populated here -->
+        </tbody>
+      </table>
+      
+      <div id="group-details-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Group Details</h2>
+          <p><strong>Method:</strong> <span id="modal-group-method"></span></p>
+          <p><strong>Location:</strong> <span id="modal-group-location"></span></p>
+          <p><strong>Subject:</strong> <span id="modal-group-subject"></span></p>
+        </div>
+      </div>
+      
+      <button onclick="location.href = 'portal.html';" type="button" class="logout logout:hover"> Back</button>
+
+  
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modal-message"></p>
+          </div>
+      </div>
+ 
+    <!--various firebase scripts required for functionality of the database, such as initializing the firebase api instance,
+    initializing firestore database, initializing firebase authentication (for technician auth), and initializing firebase storage
+    (for book cover storage), defer means to run the script after the others-->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"
+    ></script>
+  </body>
+</html>

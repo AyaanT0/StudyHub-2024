@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!--favicon-->
+    <title>Technician Portal</title><!--tab title-->
+    <link rel="stylesheet" href="css/techport.css">
+    <!--this links the css stylesheet for this page, located in the css folder-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--this initializes jQuery, the JS library used for scripting and firebase api calls -->
+    <script src="js/techport.js"></script><!--this links the js script for this page, located in the js folder-->
+</head>
+
+<body>
+    <div align="center" class="technicianportal" id="technicianportal"><!--main content div-->
+        <h1 class="welcome">Welcome, User</h1><!--technician welcome title top h1-->
+        <h2 class="logotext">StudyHub</h2><!--north park library title h2-->
+        <rect class="rectangle0000"></rect><!--top bar rectangle logo-->
+        <rect class="rectangle0"></rect><!--top bar rectangle title-->
+        <rect class="rectangle1bigtportal"></rect><!--main content rectangle-->
+        <a href="homepage.html"><img src="img/studylogoclr.png" class="logo"></a><!--top bar logo-->
+
+        <button type="button" id="logout"
+            class="logout logout:hover">LOGOUT</button><!--logout button linked to firebase auth-->
+        <button onclick="location.href = 'addbook.html';" type="button" class="addbookside addbookside:hover"></button><!--add book side button redirect-->
+        <img class="fortnite" src="img/pinmap.png">
+
+        <button onclick="location.href = 'addbook.html';" type="button" class="rectaddbook rectaddbook:hover">Start <br> Group</button><!--add book middle button redirect-->
+        <button onclick="location.href = 'removebook.html';" type="button"
+            class="rectremovebook rectremovebook:hover">Join<br>Group</button><!--remove button middle button redirect-->
+        <button onclick="location.href = 'checkoutbook.html';" type="button"
+            class="rectcheckoutbook rectcheckinbook:hover">StudyHub<br>AI+<br>
+            </button><!--checkout book middle button redirect-->
+        <button onclick="location.href = 'checkinbook.html';" type="button"
+            class="rectcheckinbook rectcheckinbook:hover">Recent<br>Activity</button><!--checkin book middle button redirect-->
+
+    </div>
+    <!--various firebase scripts required for functionality of the database, such as initializing the firebase api instance,
+    initializing firestore database, initializing firebase authentication (for technician auth)-->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> <!--this links the favicon for the tab-->
+    <title>Check Out Book</title><!--tab title-->
+    <link rel="stylesheet" href="css/checkout.css">
+    <!--this links the css stylesheet for this page, located in the css folder-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--this initializes jQuery, the JS library used for scripting and firebase api calls -->
+    <script src="js/checkout.js"></script><!--this links the js script for this page, located in the js folder-->
+</head>
+
+<body>
+    <div align="center" class="checkoutbookpage" id="checkoutbookpage"><!--main content div-->
+        <h1 class="welcome">StudyHub AI+</h1><!--title top h1-->
+        <h2 class="logotext">StudyHub</h2><!--north park library title h2-->
+        <rect class="rectangle0000"></rect><!--top bar rectangle logo-->
+        <rect class="rectangle0"></rect><!--top bar rectangle title-->
+        <rect class="rectangle1bigtportal"></rect><!--main content rectangle-->
+        <rect class="rectangle1bigtcheckout"></rect><!--content rectangle-->
+        <rect class="rectangle2bigtcheckout"></rect><!--content rectangle-->
+        <a href="homepage.html"><img src="img/studylogoclr.png" class="logo"></a><!--top bar logo-->
+
+
+        <button onclick="location.href = 'portal.html';" type="button"
+            class="logout logout:hover">Back</button><!--back button to technician portal-->
+
+            <div class="calculator">
+                <input type="text" class="display" readonly>
+                <div class="buttons">
+                    <button class="operator" onclick="clearDisplay()">C</button>
+                    <button class="operator" onclick="deleteLast()">←</button>
+                    <button class="operator" onclick="evaluateAndDisplay()">=</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                    <button onclick="parenthesis('(')">(</button>
+                    <button onclick="parenthesis(')')">)</button>
+                    <button onclick="power()">^</button>
+                    <button onclick="squareRoot()">√</button>
+
+                </div>
+            </div>
+
+
+        <form id="bookcheckoutform" class="checkoutbookform">
+            <input class="booknumber" name="bookNumberT" id="bookNumberT" placeholder="Enter Text">
+            <button class="checkoutbookbutton checkoutbookbutton:hover" id="submit">SEND</button>
+        </form>
+            <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    </div>
+    <!--various firebase scripts required for functionality of the database, such as initializing the firebase api instance,
+    initializing firestore database, initializing firebase authentication (for technician auth), defer means to run the script after the others-->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+</body>
+
+</html>

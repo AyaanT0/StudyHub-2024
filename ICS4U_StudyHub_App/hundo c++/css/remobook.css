@@ -1,0 +1,730 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.removebookpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.topbarimage {
+  position: absolute;
+  width: 5.79vw;
+  height: 13vh;
+  left: 82.3vw;
+  top: 1.04vh;
+  z-index: 3;
+}
+
+.sideimage1 {
+  position: absolute;
+  width: 25vw;
+  height: 86vh;
+  left: 0vw;
+  top: 15vh;
+  opacity: 0.25;
+  z-index: 5;
+}
+
+.rectangle000 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 25vw;
+  height: 86vh;
+  left: 0vw;
+  top: 15vh;
+  z-index: 3;
+  background: #7b7b7b;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+}
+
+.rectangle0000 {
+  position: absolute;
+  width: 25vw;
+  height: 15vh;
+  left: 0vw;
+  top: 0vh;
+  background: #7294ee;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.rectangle0 {
+  position: absolute;
+  width: 75vw;
+  height: 15vh;
+  left: 25vw;
+  top: 0vh;
+  background: #90a8e9;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.rectangle69 {
+  position: absolute;
+  width: 25vw;
+  height: 6.5vh;
+  left: 0vw;
+  top: 19.44vh;
+  background: #9c9c9c;
+  transform: rotate(180deg);
+  z-index: 5;
+}
+
+.welcome {
+  position: absolute;
+  top: -8vh;
+  left: 35vw;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 6.48vw;
+  align-self: auto;
+  font-style: italic;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: condensed;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  z-index: 3;
+  text-shadow: 0.1vw 0 white, 0 0.1vw white, 0.1vw 0 white, 0 0.1vw white;
+}
+
+.sidebartext {
+  top: 17vh;
+  left: 0.3vw;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 2vw;
+  align-self: auto;
+  font-style: italic;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: condensed;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.logo {
+  position: absolute;
+  width: 9.8vw;
+  height: 19.8vh;
+  left: 0.5vw;
+  top: -2.5vh;
+  z-index: 45;
+}
+
+.logotext {
+  top: -2.8vh;
+  left: 10vw;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 2.44vw;
+  align-self: auto;
+  font-style: italic;
+  z-index: 2;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: condensed;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  z-index: 5;
+  text-shadow: 0.07vw 0 white, 0 0.07vw white, 0.07vw 0 white, 0 0.07vw white;
+}
+
+.midlogo {
+  position: absolute;
+  width: 75vw;
+  height: 114vh;
+  left: 24.5vw;
+  top: 0.6vh;
+  opacity: 0.45;
+  z-index: 3;
+}
+
+.logout {
+  box-sizing: border-box;
+  position: absolute;
+  width: 4.9vw;
+  height: 3vh;
+  left: 91vw;
+  top: 9.5vh;
+  font-size: 1.4vh;
+  font-family: Roboto;
+  z-index: 10;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  background: #cfd9f6;
+  border: 0.075vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2vw;
+}
+
+.logout:hover {
+  background-color: #e48d7a;
+  color: white;
+  transform: scale(1.1);
+}
+
+.triangledown {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  left: 21.8vw;
+  top: 20.7vh;
+  z-index: 420;
+}
+
+.addbookside {
+  box-sizing: border-box;
+  position: absolute;
+  width: 22.56vw;
+  height: 9.5vh;
+  left: 0.6vw;
+  top: 30.45vh;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.3vw;
+  z-index: 5;
+  text-align: center;
+  background: #d9d9d9;
+  border: 0.14vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  box-sizing: border-box;
+}
+
+.addbookside:hover {
+  background-color: #c0c0c0;
+  color: white;
+  transform: scale(1.03);
+}
+
+.removebookside {
+  box-sizing: border-box;
+  position: absolute;
+  width: 22.56vw;
+  height: 9.5vh;
+  left: 0.6vw;
+  top: 43.2vh;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.3vw;
+  z-index: 5;
+  text-align: center;
+  background: #d9d9d9;
+  border: 0.14vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  box-sizing: border-box;
+}
+
+.removebookside:hover {
+  background-color: #c0c0c0;
+  color: white;
+  transform: scale(1.03);
+}
+
+.checkoutbookside {
+  box-sizing: border-box;
+  position: absolute;
+  width: 22.56vw;
+  height: 9.5vh;
+  left: 0.6vw;
+  top: 56.4vh;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.3vw;
+  z-index: 5;
+  text-align: center;
+  background: #d9d9d9;
+  border: 0.14vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  box-sizing: border-box;
+}
+
+.checkoutbookside:hover {
+  background-color: #c0c0c0;
+  color: white;
+  transform: scale(1.03);
+}
+
+.checkinbookside {
+  box-sizing: border-box;
+  position: absolute;
+  width: 22.56vw;
+  height: 9.5vh;
+  left: 0.6vw;
+  top: 69.2vh;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.3vw;
+  z-index: 5;
+  text-align: center;
+  background: #d9d9d9;
+  border: 0.14vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  box-sizing: border-box;
+}
+
+.checkinbookside:hover {
+  background-color: #c0c0c0;
+  color: white;
+  transform: scale(1.03);
+}
+
+.technicianrequestside {
+  box-sizing: border-box;
+  position: absolute;
+  width: 11vw;
+  height: 9.5vh;
+  left: 0.6vw;
+  top: 82vh;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.15vw;
+  z-index: 5;
+  text-align: center;
+  background: #d9d9d9;
+  border: 0.14vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  box-sizing: border-box;
+}
+
+.technicianrequestside:hover {
+  background-color: #c0c0c0;
+  color: white;
+  transform: scale(1.03);
+}
+
+.rectangle1bigtportal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: #d5cfcf;
+}
+
+/*copy from beginning until here for all future technician css pages*/
+
+.rectangle1bigtremove {
+  box-sizing: border-box;
+  position: absolute;
+  width: 96vw;
+  height: 80.5vh;
+  left: 2vw;
+  top: 17.86vh;
+  background: #eaeeff;
+  opacity: 0.79;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  z-index: 4;
+}
+.rectanglejoin {
+  box-sizing: border-box;
+  position: absolute;
+  width: 40vw;
+  height: 35vh;
+  left: 3vw;
+  top: 21vh;
+  background: #eaeeff;
+  opacity: 0.79;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  z-index: 5;
+}
+.rectanglejoined {
+  box-sizing: border-box;
+  position: absolute;
+  width: 40vw;
+  height: 35vh;
+  left: 3vw;
+  top: 60vh;
+  background: #eaeeff;
+  opacity: 0.79;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  z-index: 5;
+}
+.rectanglejoinedone {
+  box-sizing: border-box;
+  position: absolute;
+  width: 94vw;
+  height: 76vh;
+  left: 3vw;
+  top: 20vh;
+  background: #eaeeff;
+  opacity: 0.79;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  z-index: 5;
+}
+.rectanglejoinedtitleone {
+  box-sizing: border-box;
+  position: absolute;
+  width: 35vw;
+  height: 8vh;
+  left: 33vw;
+  top: 22vh;
+  background: #887676;
+  opacity: 0.79;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  z-index: 5;
+}
+
+.rectanglejoinedtitle {
+    box-sizing: border-box;
+    position: absolute;
+    width: 35vw;
+    height: 8vh;
+    left: 5.5vw;
+    top: 61vh;
+    background: #887676;
+    opacity: 0.79;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    z-index: 5;
+}
+
+.jointext {
+    position: absolute;
+    width: 33.33vw;
+    height: 29.55vh;
+    left: 7vw;
+    top: 20vh;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2vw;
+    line-height: 5.5vw;
+    text-align: center;
+    z-index: 7;
+    color: #000000;
+  }
+
+  .joinedtext {
+    position: absolute;
+    width: 33.33vw;
+    height: 29.55vh;
+    left: 7vw;
+    top: 59vh;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2vw;
+    line-height: 5.5vw;
+    text-align: center;
+    z-index: 7;
+    color: #000000;
+  }
+
+  .joinedtextone {
+    position: absolute;
+    width: 33.33vw;
+    height: 29.55vh;
+    left: 34vw;
+    top: 20.2vh;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2vw;
+    line-height: 5.5vw;
+    text-align: center;
+    z-index: 7;
+    color: #000000;
+  }
+
+/* General styles for tables */
+table {
+    width: 40vw;
+    border-collapse: collapse;
+    margin-bottom: 1vh;
+    z-index: 8;
+    position: relative;
+    display: block;
+    overflow: auto;
+    max-height: 60vh;
+    table-layout: fixed;
+}
+
+/* Styles for the available groups table */
+.available-groups-table {
+    width: 35vw;
+    left: -5.5vw;
+    top: 31vh;
+    height: 23vh;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    z-index: 8;
+    position: relative;
+    display: block;
+    background-color: white; /* Added background color */
+    border: none; /* Remove border */
+}
+
+.available-groups-table, .available-groups-table th, .available-groups-table td {
+    border: 1px solid black;
+}
+
+.available-groups-table th, .available-groups-table td {
+    padding: 12px; /* Increased padding */
+    text-align: left;
+}
+
+.available-groups-table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}
+
+/* Styles for the joined groups table */
+.joined-groups-table {
+    width: 35vw;
+    left: -51vw;
+    top: 70vh;
+    height: 23vh;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    z-index: 8;
+    position: relative;
+    display: block;
+    background-color: white; /* Added background color */
+    border: none; /* Remove border */
+}
+
+.joined-groups-table, .joined-groups-table th, .joined-groups-table td {
+    border: 1px solid black;
+}
+
+.joined-groups-table th, .joined-groups-table td {
+    padding: 12px; /* Increased padding */
+    text-align: left;
+}
+
+.joined-groups-table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light gray background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Gray scrollbar handle */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker gray on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.booknumber {
+  box-sizing: border-box;
+  position: absolute;
+  width: 26.1vw;
+  height: 10.1vh;
+  left: 60.06vw;
+  top: 48.3vh;
+  background: #d9d9d9;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.76vw;
+  line-height: 2.05vw;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #000000;
+  z-index: 4;
+  opacity: 0.67;
+}
+
+
+.removebookbutton {
+  box-sizing: border-box;
+  position: absolute;
+  width: 22.56vw;
+  height: 9.5vh;
+  left: 63vw;
+  top: 85vh;
+  z-index: 4;
+  background: #887676;
+  border: 0.07vw solid #000000;
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.05vw;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2.34vw;
+  line-height: 3.42vw;
+  text-align: center;
+  color: #000000;
+}
+
+.removebookbutton:hover {
+  background-color: #768888;
+  transform: scale(1.03);
+}
+
+.booknumbertext {
+  position: absolute;
+  width: 33.33vw;
+  height: 29.55vh;
+  left: 28.6vw;
+  top: 47.38vh;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 3.52vw;
+  line-height: 5.5vw;
+  text-align: center;
+  z-index: 4;
+  color: #000000;
+}
+.booktype {
+    position: absolute;
+    width: 45vw;
+    height: 7.5vh;
+    left: 50vw;
+    top: 30vh;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.5vw;
+    line-height: 2.3vw;
+    color: #000000;
+    z-index: 4;
+    background: #D9D9D9;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    opacity: 0.67;
+}
+
+.bookpublication {
+    box-sizing: border-box;
+    position: absolute;
+    width: 45vw;
+    height: 7.5vh;
+    left: 50vw;
+    top: 50vh;
+    background: #D9D9D9;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.5vw;
+    line-height: 2.05vw;
+    text-decoration-line: underline;
+    color: #000000;
+    opacity: 0.67;
+    z-index: 4;
+}
+
+.bookgenre {
+    box-sizing: border-box;
+    position: absolute;
+    width: 45vw;
+    height: 7.5vh;
+    left: 50vw;
+    top: 70vh;
+    background: #D9D9D9;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.5vw;
+    line-height: 2.05vw;
+    text-decoration-line: underline;
+    color: #000000;
+    opacity: 0.67;
+    z-index: 4;
+}

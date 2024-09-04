@@ -1,0 +1,524 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.checkoutbookpage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.topbarimage {
+    position: absolute;
+    width: 5.79vw;
+    height: 13vh;
+    left: 82.3vw;
+    top: 1.04vh;
+    z-index: 3;
+}
+
+.sideimage1 {
+    position: absolute;
+    width: 25vw;
+    height: 86vh;
+    left: 0vw;
+    top: 15vh;
+    opacity: 0.25;
+    z-index: 5;
+}
+
+.rectangle000 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 25vw;
+    height: 86vh;
+    left: 0vw;
+    top: 15vh;
+    z-index: 3;
+    background: #7B7B7B;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+}
+
+.rectangle0000 {
+    position: absolute;
+    width: 25vw;
+    height: 15vh;
+    left: 0vw;
+    top: 0vh;
+    background: #7294EE;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.rectangle0 {
+    position: absolute;
+    width: 75vw;
+    height: 15vh;
+    left: 25vw;
+    top: 0vh;
+    background: #90A8E9;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.rectangle69 {
+    position: absolute;
+    width: 25vw;
+    height: 6.5vh;
+    left: 0vw;
+    top: 19.44vh;
+    background: #9C9C9C;
+    transform: rotate(180deg);
+    z-index: 5;
+}
+
+.welcome {
+    position: absolute;
+    top: -8vh;
+    left: 30vw;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 6.48vw;
+    align-self: auto;
+    font-style: italic;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: condensed;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    z-index: 3;
+    text-shadow: 0.1vw 0 white, 0 0.1vw white, 0.1vw 0 white, 0 0.1vw white;
+}
+
+.sidebartext {
+    top: 17vh;
+    left: 0.3vw;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 2vw;
+    align-self: auto;
+    font-style: italic;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: condensed;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    width: 9.8vw;
+    height: 19.8vh;
+    left: 0.5vw;
+    top: -2.5vh;
+    z-index: 45;
+}
+
+.logotext {
+    top: -2.8vh;
+    left: 10vw;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 2.44vw;
+    align-self: auto;
+    font-style: italic;
+    z-index: 2;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: condensed;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    z-index: 5;
+    text-shadow: 0.07vw 0 white, 0 0.07vw white, 0.07vw 0 white, 0 0.07vw white;
+}
+
+.midlogo {
+    position: absolute;
+    width: 75vw;
+    height: 114vh;
+    left: 24.5vw;
+    top: 0.6vh;
+    opacity: 0.45;
+    z-index: 3;
+}
+
+.logout {
+    box-sizing: border-box;
+    position: absolute;
+    width: 4.9vw;
+    height: 3vh;
+    left: 91vw;
+    top: 9.5vh;
+    font-size: 1.4vh;
+    font-family: Roboto;
+    z-index: 10;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    background: #cfd9f6;
+    border: 0.075vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2vw;
+}
+
+.logout:hover {
+    background-color: #e48d7a;
+    color: white;
+    transform: scale(1.1);
+}
+
+.triangledown {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    left: 21.8vw;
+    top: 20.7vh;
+    z-index: 420;
+}
+
+.addbookside {
+    box-sizing: border-box;
+    position: absolute;
+    width: 22.56vw;
+    height: 9.5vh;
+    left: 0.6vw;
+    top: 30.45vh;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.3vw;
+    z-index: 5;
+    text-align: center;
+    background: #D9D9D9;
+    border: 0.14vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    box-sizing: border-box;
+}
+
+.addbookside:hover {
+    background-color: #C0C0C0;
+    color: white;
+    transform: scale(1.03);
+}
+
+/* Add z-index property to the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999; /* Set z-index to a high value */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure modal-content is positioned relative to modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.removebookside {
+    box-sizing: border-box;
+    position: absolute;
+    width: 22.56vw;
+    height: 9.5vh;
+    left: 0.6vw;
+    top: 43.2vh;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.3vw;
+    z-index: 5;
+    text-align: center;
+    background: #D9D9D9;
+    border: 0.14vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    box-sizing: border-box;
+}
+
+.removebookside:hover {
+    background-color: #C0C0C0;
+    color: white;
+    transform: scale(1.03);
+}
+
+.checkoutbookside {
+    box-sizing: border-box;
+    position: absolute;
+    width: 22.56vw;
+    height: 9.5vh;
+    left: 0.6vw;
+    top: 56.4vh;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.3vw;
+    z-index: 5;
+    text-align: center;
+    background: #D9D9D9;
+    border: 0.14vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    box-sizing: border-box;
+}
+
+.checkoutbookside:hover {
+    background-color: #C0C0C0;
+    color: white;
+    transform: scale(1.03);
+}
+
+.checkinbookside {
+    box-sizing: border-box;
+    position: absolute;
+    width: 22.56vw;
+    height: 9.5vh;
+    left: 0.6vw;
+    top: 69.2vh;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.3vw;
+    z-index: 5;
+    text-align: center;
+    background: #D9D9D9;
+    border: 0.14vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    box-sizing: border-box;
+}
+
+.checkinbookside:hover {
+    background-color: #C0C0C0;
+    color: white;
+    transform: scale(1.03);
+}
+
+.technicianrequestside {
+    box-sizing: border-box;
+    position: absolute;
+    width: 11vw;
+    height: 9.5vh;
+    left: 0.6vw;
+    top: 82vh;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.15vw;
+    z-index: 5;
+    text-align: center;
+    background: #D9D9D9;
+    border: 0.14vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    box-sizing: border-box;
+}
+
+.technicianrequestside:hover {
+    background-color: #C0C0C0;
+    color: white;
+    transform: scale(1.03);
+}
+
+.rectangle1bigtportal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #D5CFCF;
+}
+
+/*copy from beginning until here for all future technician css pages*/
+
+
+.rectangle1bigtcheckout {
+    box-sizing: border-box;
+    position: absolute;
+    width: 48vw;
+    height: 80vh;
+    left: 1vw;
+    top: 18vh;
+    z-index: 4;
+    background: #EAEEFF;
+    opacity: 0.79;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+}
+
+.rectangle2bigtcheckout {
+    box-sizing: border-box;
+    position: absolute;
+    width: 48vw;
+    height: 80vh;
+    left: 51vw;
+    top: 18vh;
+    z-index: 4;
+    background: #EAEEFF;
+    opacity: 0.79;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+}
+
+.calculator {
+    position: fixed;
+    top: 19vh;
+    left: 2vw;
+    width: 45vw;
+    height:75vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 12;
+}
+
+.display {
+    width: calc(100% - 10px);
+    height: 10vh;
+    margin-bottom: 2vh;
+    font-size: 4vw;
+    text-align: right;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vw;
+}
+
+button {
+    width: calc(55% - 1vw);
+    height: 4vw;
+    font-size: 3.6vw;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+
+.booknumber {
+    box-sizing: border-box;
+    position: absolute;
+    width: 45vw;
+    height: 60vh;
+    left: 52.5vw;
+    top: 22vh;
+    background: #D9D9D9;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.76vw;
+    line-height: 2.05vw;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    z-index: 4;
+    opacity: 0.67;
+}
+
+.checkoutbookbutton {
+    box-sizing: border-box;
+    position: absolute;
+    width: 22.56vw;
+    height: 9.5vh;
+    left: 65vw;
+    top: 85vh;
+    z-index: 4;
+    background: #887676;
+    border: 0.07vw solid #000000;
+    box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.05vw;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.34vw;
+    line-height: 3.42vw;
+    text-align: center;
+    color: #000000;
+}
+
+.checkoutbookbutton:hover {
+    background-color: #768888;
+    transform: scale(1.03);
+}
+
+.booknumbertext {
+    position: absolute;
+    width: 33.33vw;
+    height: 29.55vh;
+    left: 28.6vw;
+    top: 47.38vh;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 3.52vw;
+    line-height: 5.5vw;
+    text-align: center;
+    z-index: 4;
+    color: #000000;
+}
